@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(3, calc(100vw/3));
+}
+
+.navBox1{
+}
+.navBox2{
+    text-align: center;
+}
+
+.navBox3{
+    text-align: right;
+}

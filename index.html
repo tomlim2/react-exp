@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/@lottiefiles/jlottie@latest/dist/jlottie.js" type="module"></script>
+
     <title>Document</title>
 </head>
 <body>
-    hi!
+    <nav class="header">
+        <div class="navBox1">hi!</div>
+        <div class="navBox2">sup?</div>
+        <div class="navBox3">there</div> 
+    </nav>
+    <div id="my-animation"></div>
+
+    <script>
+        jlottie.loadAnimation({
+        container: document.getElementById('my-animation'),
+        loop: true,
+        autoplay: true,
+        path: 'https://assets6.lottiefiles.com/packages/lf20_ctKmtF.json',
+        });
+    </script>
+    
 </body>
 </html>
