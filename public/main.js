@@ -2,7 +2,7 @@
 const clientId = 'AAET0DA1YQ1300LNJA2X4TILV2M5BGEDQAEUP1YMD1FGHPXB';
 const clientSecret = '5QP1BIURE3MVQA2CC2SZSJXR4N245ZRMYTEJXNKPESRQ2ML0';
 const url = 'https://api.foursquare.com/v3/places/search?near=';
-const accessToken = 'fsq3c8LsJQqTu6tZ6jTGgMxGo5Brx7jMx6qAR87LW2CFhdE='
+const accessToken = 'fsq3HRz54fRXsc+Q20TixEaRl48z+utOxSziqeefRJa7EnU='
 
 // OpenWeather Info
 const openWeatherKey = 'ca3f1b9673fa1a16714d616face9034eD';
@@ -27,7 +27,7 @@ const getVenues = () => {
     method: 'GET',
     headers: {
       Accept: 'application/json',
-      Authorization: 'fsq3vkcOBUJNpdmaBRgKDqhsU76Gt0wvT7D0okoFO+XFSTY=='
+      Authorization: accessToken
     }
   };
   
