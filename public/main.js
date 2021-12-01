@@ -22,9 +22,7 @@ const headers = new Headers({
 });
 
 // Add AJAX functions here:
-const getVenues = async () => {
-  const city = $input.val();
-  // const options = {mode: 'no-cors',method: 'GET', headers: {Accept: 'application/json','Authorization': accessToken}};
+const getVenues = () => {
   const options = {
     method: 'GET',
     headers: {
@@ -32,18 +30,11 @@ const getVenues = async () => {
       Authorization: 'fsq3c8LsJQqTu6tZ6jTGgMxGo5Brx7jMx6qAR87LW2CFhdE='
     }
   };
-  const urlToFetch = url + city 
-  + '&limit=10';
-
-  try{
-    const response = await fetch(urlToFetch, options)
-    if(response.ok){
-      const jsonResponse = await response.json();
-console.log(jsonResponse);
-    }
-    }catch(error){
-      console.log(error)
-    }
+  
+  fetch('https://api.foursquare.com/v3/places/search?near=sf&limit=2', options)
+    .then(response => response.json())
+    .then(response => console.log(response))
+    .catch(err => console.error(err));
 }
 
 const getForecast = () => {
