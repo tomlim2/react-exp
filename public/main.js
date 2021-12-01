@@ -25,6 +25,7 @@ const headers = new Headers({
 const getVenues = () => {
   const options = {
     method: 'GET',
+    mode: 'no-cors',
     headers: {
       Accept: 'application/json',
       Authorization: 'fsq3c8LsJQqTu6tZ6jTGgMxGo5Brx7jMx6qAR87LW2CFhdE='
