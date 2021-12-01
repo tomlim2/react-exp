@@ -27,7 +27,7 @@ const getVenues = () => {
     method: 'GET',
     headers: {
       Accept: 'application/json',
-      Authorization: 'fsq3c8LsJQqTu6tZ6jTGgMxGo5Brx7jMx6qAR87LW2CFhdE='
+      Authorization: 'fsq3vkcOBUJNpdmaBRgKDqhsU76Gt0wvT7D0okoFO+XFSTY=='
     }
   };
   
