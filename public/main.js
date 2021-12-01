@@ -26,12 +26,13 @@ const getVenues = () => {
   const options = {
     method: 'GET',
     headers: {
+      credentials: 'include',
       Accept: 'application/json',
-      Authorization: 'fsq3HRz54fRXsc+Q20TixEaRl48z+utOxSziqeefRJa7EnU='
+      Authorization: 'fsq35ltzeiYIT3uT1oTjF/cj9nmugblSX2dYVpiBBrLhHcs='
     }
   };
   
-  fetch('https://api.foursquare.com/v3/places/search?near=sf&limit=1', options)
+  fetch('https://api.foursquare.com/v3/places/search?limit=1', options)
     .then(response => response.json())
     .then(response => console.log(response))
     .catch(err => console.error(err));
